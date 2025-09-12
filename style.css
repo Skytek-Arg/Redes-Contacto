@@ -308,77 +308,87 @@ nav ul li a {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     body {
         background-image: url(content/gif/fondo.gif);
-        background-size: 100% 100%;
-        padding: 10px;
+        background-size: cover; /* mejor que 100% 100%, mantiene proporción */
+        background-position: center;
+        padding: 12px;
+        margin: 0;
     }
-    
+
     .contenedor-banner {
-        flex-direction: row;
+        flex-direction: column; /* Column en móviles para mejor visual */
+        align-items: center;
+        gap: 10px;
     }
 
     .gif-banner {
-        width: 15vw;
+        width: 30vw; /* un poco más grande que 15vw para visibilidad */
+        max-width: 100px;
     }
 
     .video-banner {
-        width: 50vw;
+        width: 80vw; /* ocupar más ancho del móvil */
+        max-width: 300px;
+        height: auto;
     }
-  
+
     .cont-contact {
-        display: grid; /* Distribución en cuadrícula */
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajuste automático */
-        gap: 10px; /* Separación entre productos */
-        margin-top: 10px; /* Margen superior */
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 12px;
+        margin-top: 12px;
+        justify-items: center;
         align-items: center;
     }
 
     .gif-cont {
-        width: 25vw;               /* ajustá según tamaño del gif */
-        margin: 2px;
+        width: 35vw; 
+        max-width: 120px;
+        margin: 3px;
         justify-items: center;
     }
 
     .img-cont {
-        width: 35vw;              /* ajusta según tamaño del ícono */
+        width: 40vw;
+        max-width: 140px;
         height: auto;
-        margin-bottom: 1px;
+        margin-bottom: 3px;
         border: 2px dotted tomato;
     }
 
     .imgProd {
-        width: 60%;
+        width: 70%;
         max-width: 120px;
         height: auto;
     }
 
     .productos {
-        grid-template-columns: 1fr; /* Una columna */
-        gap: 8px;
-        margin-top: 8px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
         justify-items: center;
     }
 
     .producto {
-        background: lightsteelblue; /* Fondo claro */
-        border-radius: 4px; /* Bordes redondeados */
+        background: lightsteelblue;
+        border-radius: 6px;
         text-align: center;
-        width: 100%;
-        max-width: 150px;
-        font-size: 12px;
-        padding: 5px;
+        width: 90%;
+        max-width: 160px;
+        font-size: 14px; /* un poco más grande para lectura en móvil */
+        padding: 6px;
     }
 
     .headerImg {
-        height: 10vh;
-        width: 15vw;
+        height: auto;
+        width: 25vw;
+        max-width: 120px;
     }
 
     header h1 {
-        font-size: 14px; /* Tamaño del título */
+        font-size: 16px;
+        text-align: center;
     }
-
 }
