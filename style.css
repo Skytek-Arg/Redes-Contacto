@@ -311,51 +311,55 @@ nav ul li a {
 @media only screen and (max-width: 500px) {
     body {
         background-image: url(content/gif/fondo.gif);
-        background-size: cover; /* mejor que 100% 100%, mantiene proporción */
+        background-size: 100% 100%;
         background-position: center;
         padding: 12px;
         margin: 0;
     }
 
     .contenedor-banner {
-        flex-direction: column; /* Column en móviles para mejor visual */
-        align-items: center;
-        gap: 10px;
+        display: flex;
+        flex-direction: row;       /* Horizontal para que gif y video estén en línea */
+        align-items: center;       /* Centrar verticalmente */
+        justify-content: center;   /* Centrar horizontalmente */
+        gap: 10px;                 /* Separación entre gif y video */
+        flex-wrap: wrap;           /* Permite que bajen a la siguiente línea si no hay espacio */
     }
 
     .gif-banner {
-        width: 30vw; /* un poco más grande que 15vw para visibilidad */
-        max-width: 100px;
+        width: 10vw;               /* Ajuste más pequeño para caber con el video */
+        max-width: 120px;
+        height: auto;
     }
 
     .video-banner {
-        width: 80vw; /* ocupar más ancho del móvil */
+        width: 60vw;               /* Ajusta para ocupar el resto del espacio */
         max-width: 300px;
         height: auto;
     }
 
+    /* Adaptación principal: cont-contact con flex horizontal */
     .cont-contact {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 12px;
-        margin-top: 12px;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;        /* Permite que los elementos bajen a la siguiente línea si falta espacio */
         align-items: center;
-    }
-
-    .gif-cont {
-        width: 35vw; 
-        max-width: 120px;
-        margin: 3px;
-        justify-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 12px;
     }
 
     .img-cont {
         width: 40vw;
         max-width: 140px;
         height: auto;
-        margin-bottom: 3px;
         border: 2px dotted tomato;
+    }
+
+    .gif-cont {
+        width: 20vw;
+        max-width: 80px;
+        height: auto;
+        margin-left: -10px;    /* Ajuste opcional para que la mano apunte al ícono */
     }
 
     .imgProd {
@@ -365,6 +369,7 @@ nav ul li a {
     }
 
     .productos {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
         margin-top: 10px;
@@ -377,7 +382,7 @@ nav ul li a {
         text-align: center;
         width: 90%;
         max-width: 160px;
-        font-size: 14px; /* un poco más grande para lectura en móvil */
+        font-size: 14px;
         padding: 6px;
     }
 
@@ -388,7 +393,11 @@ nav ul li a {
     }
 
     header h1 {
-        font-size: 16px;
+        font-size: 15px;
         text-align: center;
+    }
+
+    body h4 {
+        color:gold;
     }
 }
