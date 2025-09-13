@@ -46,6 +46,7 @@ p {
     height: auto;
     margin-bottom: 10px;
     border: 4px dotted tomato;
+    border-radius: 50%; /* Bordes redondeados */
 }
 
 .contenedor-banner {
@@ -62,6 +63,7 @@ p {
     height: auto;
     object-fit: contain;
     max-width: 100%;
+    border-radius: 5%; /* Bordes redondeados */
 }
 
 .gif-banner {
@@ -76,8 +78,12 @@ p {
     background: red;
     color: white;
     font-weight: bold;
-    border-radius: 6px;
+    border-radius: 10%;
     text-decoration: none;
+}
+
+.boton-rojo-cont:hover {
+    background-color: orange; /* rojo más oscuro al pasar el mouse */
 }
 
 .boton-rojo {
@@ -86,13 +92,13 @@ p {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /* da la forma redondeada */
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .boton-rojo:hover {
-    background-color: #cc0000; /* rojo más oscuro al pasar el mouse */
+    background-color: orange; /* rojo más oscuro al pasar el mouse */
 }
 
 
@@ -111,6 +117,7 @@ header {
     background: blue; /* Color de fondo */
     color: white; /* Color de texto */
     padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 header h1 {
@@ -173,6 +180,7 @@ nav ul {
     list-style-type: none; /* Sin viñetas */
     background: skyblue; /* Fondo oscuro */
     padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 nav ul li {
@@ -199,7 +207,7 @@ nav ul li a {
     aspect-ratio: 16 / 9;
     background: lightseagreen;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 20px;
     text-align: center;
  }
 
@@ -214,7 +222,7 @@ nav ul li a {
 .producto {
     background: lightsteelblue; /* Fondo claro */
     padding: 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 20%; /* Bordes redondeados */
     text-align: center; /* Texto centrado */
 }
 
@@ -236,6 +244,7 @@ nav ul li a {
 .imgProd{
     height: 50vh;
     width: 20vw;
+    border-radius: 25%;
 }
 
 .headerImg {
@@ -244,7 +253,7 @@ nav ul li a {
 }
 
 .producto h2 {
-    margin-bottom: 10px; /* Espacio inferior */
+    margin-bottom: 1px; /* Espacio inferior */
 }
 
 .producto .precio {
@@ -378,7 +387,7 @@ nav ul li a {
 
     .producto {
         background: lightsteelblue;
-        border-radius: 6px;
+        border-radius: 10%;
         text-align: center;
         width: 90%;
         max-width: 160px;
