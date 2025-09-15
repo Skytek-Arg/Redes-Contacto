@@ -273,7 +273,7 @@ nav ul li a {
     background: #555; /* Cambio de color al pasar el cursor */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
     body {
         background-image: url(content/gif/fondo.gif);
         background-size: 100% 100%;
@@ -297,24 +297,180 @@ nav ul li a {
   
     .cont-contact {
         display: grid; /* Distribución en cuadrícula */
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
-        gap: 20px; /* Separación entre productos */
-        margin-top: 20px; /* Margen superior */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajuste automático */
+        gap: 10px; /* Separación entre productos */
+        margin-top: 10px; /* Margen superior */
         justify-content: center;
         align-items: center;
     }
 
     .gif-cont {
-        width: 25vw;               /* ajustá según tamaño del gif */
-        margin-top: 10px;
+        width: 15vw;               /* ajustá según tamaño del gif */
+        margin-top: 5px;
     }
 
     .img-cont {
-        width: 30vw;              /* ajusta según tamaño del ícono */
+        width: 20vw;              /* ajusta según tamaño del ícono */
         height: auto;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         border: 4px dotted tomato;
     }
+    .imgProd {
+        width: 70%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 5px;
+        margin-top: 5px;
+        justify-items: center;
+    }
+
+    .productos p {
+        font-size: 25px;
+    }
+
+    .producto {
+        background: lightsteelblue;
+        border-radius: 10%;
+        text-align: center;
+        width: 90%;
+        max-width: 350px;
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .videos {
+    display: grid; /* Distribución en cuadrícula */
+    grid-template-columns: repeat(2, auto); /* Ajuste automático */
+    gap: 5px; /* Separación entre productos */
+    margin-top: 10px; /* Margen superior */
+    justify-items: center;
+    }
+
+    .video {
+    width: 90%;
+    max-width: 375px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: lightseagreen;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    }
+
+    .headerImg {
+        height: auto;
+        width: 30vw;
+        max-width: 150px;
+    }
+
+    header h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-image: url(content/gif/fondo.gif);
+        background-size: 100% 100%;
+    }
+    
+    fieldset {
+        width: 75vw;
+    }
+    
+    .contenedor-banner {
+        flex-direction: row;
+    }
+
+    .gif-banner {
+        width: 15vw;
+    }
+
+    .video-banner {
+        width: 50vw;
+    }
+  
+    .cont-contact {
+        display: grid; /* Distribución en cuadrícula */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajuste automático */
+        gap: 10px; /* Separación entre productos */
+        margin-top: 10px; /* Margen superior */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gif-cont {
+        width: 15vw;               /* ajustá según tamaño del gif */
+        margin-top: 5px;
+    }
+
+    .img-cont {
+        width: 20vw;              /* ajusta según tamaño del ícono */
+        height: auto;
+        margin-bottom: 5px;
+        border: 4px dotted tomato;
+    }
+    .imgProd {
+        width: 70%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 5px;
+        margin-top: 5px;
+        justify-items: center;
+    }
+
+    .producto {
+        background: lightsteelblue;
+        border-radius: 10%;
+        text-align: center;
+        width: 90%;
+        max-width: 250px;
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .videos {
+    display: grid; /* Distribución en cuadrícula */
+    grid-template-columns: repeat(2, auto); /* Ajuste automático */
+    gap: 5px; /* Separación entre productos */
+    margin-top: 10px; /* Margen superior */
+    justify-items: center;
+    }
+
+    .video {
+    width: 90%;
+    max-width: 325px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: lightseagreen;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    }
+
+    .headerImg {
+        height: auto;
+        width: 25vw;
+        max-width: 120px;
+    }
+
+    header h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
